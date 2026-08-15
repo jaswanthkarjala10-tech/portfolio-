@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K. Jaswanth | Portfolio</title>
+  <meta name="description" content="Portfolio of K. Jaswanth — ECE student, Python and SQL learner, and aspiring AI professional.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">KJ<span>.</span></a>
+    <button class="menu" aria-label="Open navigation">☰</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">ECE STUDENT • PYTHON • SQL • AI ENTHUSIAST</p>
+        <h1>Hi, I'm <span>K. Jaswanth</span></h1>
+        <p class="intro">
+          Electronics & Communication Engineering student building practical projects
+          with Python and MySQL, while exploring AI and modern technology.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="https://github.com/jaswanthkarjala10-tech" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">KJ</div>
+        <h2>AI Native Member</h2>
+        <p>Interested in AI-assisted problem solving, software development and continuous learning.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <p class="eyebrow">ABOUT ME</p>
+      <h2>Curious. Practical. Always learning.</h2>
+      <p class="section-text">
+        I am an Electronics & Communication Engineering student at Vel Tech University.
+        I enjoy learning programming, building database-driven applications and
+        exploring AI. I am currently strengthening my Python, SQL and web-development
+        fundamentals and looking for opportunities where I can learn and contribute.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="eyebrow">SKILLS</p>
+      <h2>What I work with</h2>
+      <div class="grid">
+        <article class="card"><h3>Python</h3><p>Variables, conditions, loops, functions and problem solving.</p></article>
+        <article class="card"><h3>SQL / MySQL</h3><p>Database design, queries and CRUD-based applications.</p></article>
+        <article class="card"><h3>HTML & CSS</h3><p>Building clean and responsive web pages.</p></article>
+        <article class="card"><h3>Git & GitHub</h3><p>Managing and sharing projects through repositories.</p></article>
+        <article class="card"><h3>AI / Generative AI</h3><p>Exploring AI concepts, prompting and AI-assisted workflows.</p></article>
+        <article class="card"><h3>Java</h3><p>Fundamentals and continued learning.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="eyebrow">PROJECTS</p>
+      <h2>Things I've built</h2>
+      <article class="project">
+        <div>
+          <span class="tag">Python + MySQL</span>
+          <h3>Student Management System</h3>
+          <p>
+            A database-driven application developed using Python and MySQL.
+            The project includes database connectivity and menu-driven CRUD
+            operations for managing student records.
+          </p>
+          <div class="tech"><span>Python</span><span>MySQL</span><span>MySQL Connector</span><span>VS Code</span></div>
+        </div>
+        <a class="project-link" href="https://github.com/jaswanthkarjala10-tech" target="_blank" rel="noopener">View GitHub ↗</a>
+      </article>
+    </section>
+
+    <section id="education" class="section">
+      <p class="eyebrow">EDUCATION</p>
+      <h2>My academic journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>2023 — 2027</span>
+          <h3>Vel Tech University</h3>
+          <p>Bachelor of Technology — Electronics & Communication Engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight">
+      <p class="eyebrow">CURRENT FOCUS</p>
+      <h2>Learning AI. Building with code.</h2>
+      <p class="section-text">
+        My current goal is to strengthen my programming fundamentals and become
+        comfortable using AI tools to learn faster, solve problems and build useful projects.
+      </p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Let's connect.</h2>
+      <p class="section-text">I'm open to learning opportunities, projects and professional connections.</p>
+      <div class="contact-links">
+        <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+        <a href="https://github.com/jaswanthkarjala10-tech" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 K. Jaswanth • Built with HTML & CSS</p>
+  </footer>
+  <script>
+    const menu = document.querySelector('.menu');
+    const nav = document.querySelector('nav');
+    menu.addEventListener('click', () => nav.classList.toggle('open'));
+    document.querySelectorAll('nav a').forEach(a =>
+      a.addEventListener('click', () => nav.classList.remove('open'))
+    );
+  </script>
+</body>
+</html>
